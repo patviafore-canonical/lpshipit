@@ -43,7 +43,7 @@ def _write_debug(output_file, message):
 
 
 def runtox(source_repo, source_branch,
-           tox_command='tox --recreate --parallel auto',
+           tox_command='tox --verbose --recreate --parallel auto',
            output_filepath=os.devnull,
            environment=None):
     with open(output_filepath, "a") as output_file, TemporaryDirectory() as local_repo:
